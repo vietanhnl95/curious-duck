@@ -41,11 +41,12 @@ showtoc = false
 tocopen = false
 
   [params.assets]
-  favicon = "<link / abs url>"
-  favicon16x16 = "<link / abs url>"
-  favicon32x32 = "<link / abs url>"
-  apple_touch_icon = "<link / abs url>"
-  safari_pinned_tab = "<link / abs url>"
+  favicon = "static/img/favicon.png"
+  # favicon16x16 = "static/img/favicon.ico"
+
+  # favicon32x32 = "<link / abs url>"
+  # apple_touch_icon = "<link / abs url>"
+  # safari_pinned_tab = "<link / abs url>"
 
   [params.label]
   text = "Curious Duck"
@@ -56,8 +57,8 @@ tocopen = false
   enabled = true
   title = "Curious Duck"
   subtitle = """
-  Hello world, welcome to my blog, \n
-  I am writing this blog
+  Hello world!\n
+  Welcome to my blog, where I share my ideas
   """
 
     [[params.profileMode.buttons]]
@@ -73,16 +74,16 @@ tocopen = false
   Content = "Welcome to my blog"
 
   [[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/"
+  name = "facebook"
+  url = "https://www.facebook.com/sieufernando.yiruma/"
 
   [[params.socialIcons]]
-  name = "stackoverflow"
-  url = "https://stackoverflow.com"
+  name = "instagram"
+  url = "https://www.instagram.com/s.i.eu/"
 
   [[params.socialIcons]]
   name = "github"
-  url = "https://github.com/"
+  url = "https://github.com/vietanhnl95"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
@@ -98,10 +99,10 @@ SiteVerificationTag = "XYZabc"
   hiddenInList = true
   hiddenInSingle = true
 
-  [params.editPost]
-  URL = "https://github.com/vietanhnl95/curious-duck-site/content"
-  Text = "Suggest Changes"
-  appendFilePath = true
+  # [params.editPost]
+  # URL = "https://github.com/vietanhnl95/curious-duck-site/content"
+  # Text = "Suggest Changes"
+  # appendFilePath = true
 
   [params.fuseOpts]
   isCaseSensitive = false
@@ -116,16 +117,16 @@ SiteVerificationTag = "XYZabc"
 identifier = "about me"
 name = "About Me"
 url = "/about-me/"
-weight = 10
+weight = 20
 
 [[menu.main]]
 identifier = "posts"
 name = "Posts"
 url = "/posts/"
-weight = 10
+weight = 20
 
 [[menu.main]]
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
-weight = 10
+weight = 20
