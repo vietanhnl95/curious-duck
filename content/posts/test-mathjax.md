@@ -11,7 +11,8 @@ With a set of vectors {$\vec{v_1}$, $\vec{v_2}$, ..., $\vec{v_n}$} in $\mathbb{R
 *Examples*
 
 In $\mathbb{R}^2$, we have 2 vectors: $\vec{v} = (1,2)$ and $\vec{w} = (4,-1)$:
-
+$2\begin{bmatrix}  1 \\ 2 \end{bmatrix}$  + 3$\begin{bmatrix}  4 \\ -1 \end{bmatrix}$
+$\begin{bmatrix} a & b \\ c & d \end{bmatrix}$
 - $2(1,2) + 3(4,-1)$  is a linear combination of $\vec{v}$ and $\vec{w}$
 - $5(1,2) - 1(4,-1)$  is also a linear combination of $\vec{v}$ and $\vec{w}$
 
