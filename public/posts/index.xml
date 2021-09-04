@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>All Posts - My New Hugo Site</title>
-        <link>http://example.org/posts/</link>
-        <description>All Posts | My New Hugo Site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</lastBuildDate><atom:link href="http://example.org/posts/" rel="self" type="application/rss+xml" /><item>
+        <title>All Posts - Curious Duck</title>
+        <link>https://curiousduck.me/posts/</link>
+        <description>All Posts | Curious Duck</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Test MathJax</title>
-    <link>http://example.org/posts/test-mathjax/</link>
+    <link>https://curiousduck.me/posts/test-mathjax/</link>
     <pubDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</pubDate>
     <author>Author</author>
-    <guid>http://example.org/posts/test-mathjax/</guid>
+    <guid>https://curiousduck.me/posts/test-mathjax/</guid>
     <description><![CDATA[Linear combination: With a set of vectors {$\vec{v_1}$, $\vec{v_2}$, &hellip;, $\vec{v_n}$} in $\mathbb{R}^n$, the linear combination of those vectors is: $$c_{1}\vec{v_1} + c_{2}\vec{v_2} + &hellip; + c_{n}\vec{v_n}$$
 Examples
 In $\mathbb{R}^2$, we have 2 vectors: $\vec{v} = (1,2)$ and $\vec{w} = (4,-1)$:
