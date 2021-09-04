@@ -8,6 +8,10 @@ title = "Curious Duck"
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
+ [params.page.math]
+  # enable math
+  enable = true
+
 # LoveIt NEW | 0.2.0 App icon config
  [params.app]
    # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -56,7 +60,7 @@ theme = "LoveIt"
      # URL of the LOGO
      logo = ""
      # title name
-     name = ""
+     name = "Curious Duck"
      # you can add extra information before the name (HTML format is supported), such as icons
      pre = ""
      # you can add extra information after the name (HTML format is supported), such as icons
@@ -66,7 +70,7 @@ theme = "LoveIt"
 
  # Footer config
  [params.footer]
-   enable = true
+   enable = false
    # LoveIt NEW | 0.2.0 Custom content (HTML format is supported)
    custom = ''
    # LoveIt NEW | 0.2.0 whether to show Hugo and theme info
@@ -77,15 +81,13 @@ theme = "LoveIt"
    author = true
    # Site creation time
    since = 2019
-   # ICP info only in China (HTML format is supported)
-   icp = ""
    # license info (HTML format is supported)
    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
  # LoveIt NEW | 0.2.0 Section (all posts) page config
  [params.section]
    # special amount of posts in each section page
-   paginate = 20
+   paginate = 10
    # date format (month and day)
    dateFormat = "01-02"
 
