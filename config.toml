@@ -1,132 +1,61 @@
-# baseURL = 'http://example.org/'
-# languageCode = 'en-us'
-# title = 'Curious Duck'
-# theme = "PaperMod"
+baseURL = "http://example.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "My New Hugo Site"
 
-baseURL = "https://curiousduck.me/"
-title = "Curious Duck"
-paginate = 5
-theme = "PaperMod"
-enableRobotsTXT = true
-buildDrafts = false
-buildFuture = false
-buildExpired = false
-googleAnalytics = "UA-123-45"
-
-[minify]
-disableXML = true
-minifyOutput = true
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
 
 [params]
-env = "production"
-title = "Curious Duck"
-description = "ExampleSite description"
-keywords = [ "Blog", "Portfolio", "PaperMod" ]
-author = "Me"
-images = [ "<link or path of image for opengraph, twitter-cards>" ]
-DateFormat = "January 2, 2006"
-defaultTheme = "auto"
-disableThemeToggle = false
-ShowReadingTime = true
-ShowShareButtons = true
-ShowPostNavLinks = true
-ShowBreadCrumbs = true
-ShowCodeCopyButtons = false
-disableSpecial1stPost = false
-disableScrollToTop = false
-comments = false
-hidemeta = false
-hideSummary = false
-showtoc = false
-tocopen = false
+  # LoveIt theme version
+  version = "0.2.X"
 
-  [params.assets]
-  favicon = "static/img/favicon.png"
-  # favicon16x16 = "static/img/favicon.ico"
+  [params.social]
+   [params.social.Mastodon]
+     # weight when arranging icons (the greater the weight, the later the icon is positioned)
+     weight = 0
+     # your social ID
+     id = "@xxxx"
+     # prefix of your social link
+     prefix = "https://mastodon.social/"
+     # content hovering on the icon
+     title = "Mastodon"
+     
 
-  # favicon32x32 = "<link / abs url>"
-  # apple_touch_icon = "<link / abs url>"
-  # safari_pinned_tab = "<link / abs url>"
-
-  [params.label]
-  text = "Curious Duck"
-  # icon = "/apple-touch-icon.png"
-  # iconHeight = 35
-
-  [params.profileMode]
-  enabled = true
-  title = "Curious Duck"
-  subtitle = """
-  Hello world!\n
-  Welcome to my blog, where I share my ideas
-  """
-
-    [[params.profileMode.buttons]]
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
     name = "Posts"
-    url = "posts"
-
-    [[params.profileMode.buttons]]
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
     name = "Tags"
-    url = "tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
 
-  [params.homeInfoParams]
-  Title = "Hello World"
-  Content = "Welcome to my blog"
-
-  [[params.socialIcons]]
-  name = "facebook"
-  url = "https://www.facebook.com/sieufernando.yiruma/"
-
-  [[params.socialIcons]]
-  name = "instagram"
-  url = "https://www.instagram.com/s.i.eu/"
-
-  [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/vietanhnl95"
-
-[params.analytics.google]
-SiteVerificationTag = "XYZabc"
-
-[params.analytics.bing]
-SiteVerificationTag = "XYZabc"
-
-[params.analytics.yandex]
-SiteVerificationTag = "XYZabc"
-
-  [params.cover]
-  hidden = true
-  hiddenInList = true
-  hiddenInSingle = true
-
-  # [params.editPost]
-  # URL = "https://github.com/vietanhnl95/curious-duck-site/content"
-  # Text = "Suggest Changes"
-  # appendFilePath = true
-
-  [params.fuseOpts]
-  isCaseSensitive = false
-  shouldSort = true
-  location = 0
-  distance = 1_000
-  threshold = 0.4
-  minMatchCharLength = 0
-  keys = [ "title", "permalink", "summary", "content" ]
-
-[[menu.main]]
-identifier = "about me"
-name = "About Me"
-url = "/about-me/"
-weight = 20
-
-[[menu.main]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 20
-
-[[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 20
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
