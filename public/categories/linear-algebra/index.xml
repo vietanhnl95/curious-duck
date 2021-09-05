@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Linear Algebra - Category - Curious Duck</title>
+        <link>https://curiousduck.me/categories/linear-algebra/</link>
+        <description>Linear Algebra - Category - Curious Duck</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/linear-algebra/" rel="self" type="application/rss+xml" /><item>
+    <title>Math Test</title>
+    <link>https://curiousduck.me/posts/vectors/</link>
+    <pubDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://curiousduck.me/posts/vectors/</guid>
+    <description><![CDATA[Linear combination: With a set of vectors {$\vec{v_1}$, $\vec{v_2}$, &hellip;, $\vec{v_n}$} in $\mathbb{R}^n$, the linear combination of those vectors is: $$ c_{1}\vec{v_1} + c_{2}\vec{v_2} + &hellip; + c_{n}\vec{v_n} $$
+Examples
+In $\mathbb{R}^2$, we have 2 vectors: $\vec{v} = (1,2)$ and $\vec{w} = (4,-1)$: $2\begin{bmatrix} 1 \ 2 \end{bmatrix}$ + 3$\begin{bmatrix} 4 \ -1 \end{bmatrix}$ $\begin{bmatrix} a &amp; b \ c &amp; d \end{bmatrix}$
+ $2(1,2) + 3(4,-1)$ is a linear combination of $\vec{v}$ and $\vec{w}$ $5(1,2) - 1(4,-1)$ is also a linear combination of $\vec{v}$ and $\vec{w}$   Vector operations With $\vec{v}=(v_1, v_2)$ and $\vec{w}=(w_1, w_2)$ in $\mathbb{R}^2$]]></description>
+</item></channel>
+</rss>

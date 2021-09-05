@@ -2,10 +2,10 @@
 title: "Math Test"
 date: 2021-09-03T11:31:40+07:00
 draft: false
+categories: [Linear Algebra]
 tags: [math]
-categories: [Discrete Math]
-math: true
 author: Curious Duck
+math: true
 ---
 ### Linear combination:
 With a set of vectors {$\vec{v_1}$, $\vec{v_2}$, ..., $\vec{v_n}$} in $\mathbb{R}^n$, the linear combination of those vectors is: $$ c_{1}\vec{v_1} + c_{2}\vec{v_2} + ... + c_{n}\vec{v_n} $$

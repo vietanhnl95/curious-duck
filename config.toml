@@ -169,7 +169,7 @@ theme = "LoveIt"
      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
      title = ""
      # subtitle shown in home page
-     subtitle = "Curiousity is the fuel for discovery, inquiry and learning"
+     subtitle = '"Curiousity is the fuel for discovery, inquiry and learning" - someone wise'
      # whether to use typeit animation for subtitle
      typeit = true
      # whether to show social links
@@ -188,7 +188,7 @@ theme = "LoveIt"
   # LoveIt NEW | 0.2.5 TypeIt config
   [params.typeit]
      # typing speed between each step (measured in milliseconds)
-     speed = 50
+     speed = 30
      # blinking speed of the cursor (measured in milliseconds)
      cursorSpeed = 1000
      # character used for the cursor (HTML format is supported)
@@ -223,16 +223,16 @@ theme = "LoveIt"
     title = ""
     weight = 2
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 3
-  [[menu.main]]
     identifier = "categories"
     name = "Categories"
     url = "/categories/"
+    weight = 3
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
     weight = 4
-
+  
 # Markup related config in Hugo
   [markup]
     # Syntax Highlighting
@@ -259,7 +259,7 @@ theme = "LoveIt"
         unsafe = true
     # Table Of Contents settings
     [markup.tableOfContents]
-      startLevel = 2
+      startLevel = 1
       endLevel = 6
 
 
