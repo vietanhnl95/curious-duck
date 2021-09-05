@@ -8,7 +8,6 @@ title = "Curious Duck"
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
-
 # [params.assets]
 # favicon = "/img/favicon.ico"
 # favicon16x16 = "/img/favicon/favicon-16x16.png"
@@ -232,7 +231,7 @@ theme = "LoveIt"
     name = "Tags"
     url = "/tags/"
     weight = 4
-  
+
 # Markup related config in Hugo
   [markup]
     # Syntax Highlighting
