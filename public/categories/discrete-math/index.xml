@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>Curious Duck</title>
-        <link>https://curiousduck.me/</link>
-        <description>Curious Duck</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</lastBuildDate>
-            <atom:link href="https://curiousduck.me/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>Discrete Math - Category - Curious Duck</title>
+        <link>https://curiousduck.me/categories/discrete-math/</link>
+        <description>Discrete Math - Category - Curious Duck</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/discrete-math/" rel="self" type="application/rss+xml" /><item>
     <title>Math Test</title>
     <link>https://curiousduck.me/posts/test-mathjax/</link>
     <pubDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</pubDate>
