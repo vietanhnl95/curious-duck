@@ -92,7 +92,7 @@ theme = "LoveIt"
 
   # LoveIt NEW | 0.2.0 Search config
   [params.search]
-  enable = false
+  enable = true
   # type of search engine ("lunr", "algolia")
   type = "lunr"
   # max index length of the chunked content
@@ -168,7 +168,7 @@ theme = "LoveIt"
      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
      title = ""
      # subtitle shown in home page
-     subtitle = '"Curiousity is the fuel for discovery, inquiry and learning" - someone wise'
+     subtitle = '"Curiosity is the fuel for discovery, inquiry and learning" - someone wise'
      # whether to use typeit animation for subtitle
      typeit = true
      # whether to show social links
@@ -266,3 +266,6 @@ theme = "LoveIt"
     [mediaTypes]
       [mediaTypes."text/plain"]
         suffixes = ["md"]
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

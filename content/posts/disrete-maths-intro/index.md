@@ -1,28 +1,30 @@
 ---
 title: "Discrete Maths - Introduction"
 date: 2021-09-05T14:30:02+07:00
-draft: false
+draft: true
 categories: ['Discrete Math']
 tags: [math]
 author: Curious Duck
 ---
 
-# What is Discrete Mathematics
+## What is Discrete Mathematics
 
-**Discrete mathematics** is the study of mathematical structures that are fundamentally discrete rather than continuous. It's not a branch of mathematics, but rather a set of branches that have one common property - that they are discrete, not continuous
+Broadly, mathematics can be classified into two categories, that are;
 
-# Application
+1. Continuous
 
-## L2
+**Discrete mathematics** is the part of mathematics that study discrete objects.
 
-### L3 test
 
-- Mathematical reasoning:
-- Combinatorial analysis
+
+
+<img src="https://learn.g2.com/hubfs/G2CR_B071_Discrete_vs_Continuous_Data_V1.png" alt="Italian Trulli">
+
+##   Application
+
+- Mathematical reasoning: This text starts with a discussion of mathematical logic, which serves as the foundation for the subsequent discussions of methods of proof. Both the science and the art of constructing proofs are addressed. The technique of mathematical induction is stressed through many different types of examples of such proofs and a careful explanation of why mathematical induction is a valid proof technique.
+
+- Combinatorial analysis:
 - Discrete structures
 - Algorithmic Thinking
 - Apllications and Modelling
-
-### L3 Another
-
-## L22
