@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Discrete Mathematics: Logic and Proofs - Curious Duck</title><meta name="Description" content="Curious Duck"><meta property="og:title" content="Discrete Mathematics: Logic and Proofs" />
+<meta property="og:description" content="1. Propositions   A proposition is a declarative sentence (that is, a sentence that declares a fact) that is either true or false, but not both.
+Examples:
+ Toronto is the capital of Canada
+-&gt; This is a proposition (and it&rsquo;s false) 1 &#43; 1 = 2
+-&gt; This is a proposition (and it&rsquo;s true) What is the capital of the US?
+-&gt; This is not a proposition because it is not declarative x &#43; 1 = 2" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://curiousduck.me/posts/logic-and-proofs/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-05T21:41:32+07:00" />
+<meta property="article:modified_time" content="2021-09-05T21:41:32+07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Discrete Mathematics: Logic and Proofs"/>
+<meta name="twitter:description" content="1. Propositions   A proposition is a declarative sentence (that is, a sentence that declares a fact) that is either true or false, but not both.
+Examples:
+ Toronto is the capital of Canada
+-&gt; This is a proposition (and it&rsquo;s false) 1 &#43; 1 = 2
+-&gt; This is a proposition (and it&rsquo;s true) What is the capital of the US?
+-&gt; This is not a proposition because it is not declarative x &#43; 1 = 2"/>
+<meta name="application-name" content="Curious Duck">
+<meta name="apple-mobile-web-app-title" content="Curious Duck"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://curiousduck.me/posts/logic-and-proofs/" /><link rel="prev" href="https://curiousduck.me/posts/vectors/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Discrete Mathematics: Logic and Proofs",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/curiousduck.me\/posts\/logic-and-proofs\/"
+        },"genre": "posts","keywords": "math","wordcount":  575 ,
+        "url": "https:\/\/curiousduck.me\/posts\/logic-and-proofs\/","datePublished": "2021-09-05T21:41:32+07:00","dateModified": "2021-09-05T21:41:32+07:00","publisher": {
+            "@type": "Organization",
+            "name": "Curious Duck"},"author": {
+                "@type": "Person",
+                "name": "Curious Duck"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Curious Duck">Curious Duck</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/about/"> About </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Curious Duck">Curious Duck</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/about/" title="">About</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Discrete Mathematics: Logic and Proofs</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Curious Duck</a></span>&nbsp;<span class="post-category">included in <a href="/categories/discrete-math/"><i class="far fa-folder fa-fw"></i>Discrete Math</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-05">2021-09-05</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;575 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-propositions">1. Propositions</a></li>
+        <li><a href="#2-applications-of-propositional-logic">2. Applications of propositional logic</a></li>
+        <li><a href="#3-propositional-equivalences">3. Propositional equivalences</a>
+          <ul>
+            <li><a href="#tautology-and-contradiction">Tautology and Contradiction</a></li>
+            <li><a href="#logical-equivalences">Logical Equivalences</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="1-propositions">1. Propositions</h2>
+<ul>
+<li>
+<p>A <strong>proposition</strong> is a declarative sentence (that is, a sentence that declares a fact) that is <em>either true or false, but not both</em>.</p>
+<p>Examples:</p>
+<ul>
+<li><em>Toronto is the capital of Canada</em><br>
+-&gt; This is a proposition (and it&rsquo;s false)</li>
+<li><em>1 + 1 = 2</em><br>
+-&gt; This is a proposition (and it&rsquo;s true)</li>
+<li><em>What is the capital of the US?</em><br>
+-&gt; This is not a proposition because it is not declarative</li>
+<li><em>x + 1 = 2</em><br>
+-&gt; This is not a proposition because it is either true or false</li>
+</ul>
+</li>
+<li>
+<p>The <strong>truth value</strong> of a proposition $p$: T when $p$ is true, and F when $p$ is false.</p>
+</li>
+<li>
+<p>An <strong>atomic proposition</strong> is a proposition that cannot be expressed in terms of simpler propositions.</p>
+<p>Example: <em>&ldquo;David Beckham is an English footballer&rdquo;</em> is a proposition, but it&rsquo;s not atomic, since it can be broken down into two simpler atomic propositions: <em>&ldquo;David Beckham is English&rdquo;</em> and <em>&ldquo;David Beckham is a footballer&rdquo;</em></p>
+</li>
+<li>
+<p>Let $p$ be a proposition, the <strong>negation</strong> of $p$, denoted by $\neg{p}$ or $\overline{p}$ is the statement <em>&ldquo;It is not the case that $p$&quot;</em></p>
+<p>Example: The negation of <em>&ldquo;I have a Macbook&rdquo;</em> is <em>&ldquo;It&rsquo;s not the case that I have a Macbook&rdquo;</em> or in simpler language <em>&ldquo;I do not have a Macbook&rdquo;</em></p>
+<p>The <strong>truth table</strong> of $\neg{p}$:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">$p$</th>
+<th style="text-align:center">$\neg{p}$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Let $p$ and $q$ be propositions</p>
+<ul>
+<li>The <strong>conjunction</strong> of $p$ and $q$, denoted by $p \land q$, is the proposition <em>“$p$ and $q$”</em></li>
+<li>The <strong>disjunction (inclusive or)</strong> of $p$ and $q$, denoted by $p \lor q$, is the proposition <em>“$p$ or $q$”</em>. It is true when at least one of $p$ and $q$ is true.</li>
+<li>The <strong>exlcusive or</strong> of $p$ and $q$, denoted by $p \oplus q$, is the proposition that is true when exactly one of $p$ and $q$ is true.</li>
+<li>The <strong>conditional statement</strong> $p \rightarrow q$ is the proposition <em>&ldquo;if $p$, then $q$.&quot;</em>.</li>
+<li>The <strong>converse</strong> of $p \rightarrow q$ is $q \rightarrow p$</li>
+<li>The <strong>inverse</strong> of $p \rightarrow q$ is $\neg{p} \rightarrow \neg{q}$</li>
+<li>The <strong>contrapositive</strong> of $p \rightarrow q$ is $\neg{q} \rightarrow \neg{p}$</li>
+<li>The <strong>biconditional statement</strong> $p \leftrightarrow q$ is the proposition “$p$ if and only if $q$”</li>
+</ul>
+<p>The <strong>truth table</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">$p$</th>
+<th style="text-align:center">$q$</th>
+<th style="text-align:center">$p \land q$</th>
+<th style="text-align:center">$p \lor q$</th>
+<th style="text-align:center">$p \oplus q$</th>
+<th style="text-align:center">$p \rightarrow q$</th>
+<th style="text-align:center">$q \rightarrow p$</th>
+<th style="text-align:center">$\neg{p} \rightarrow \neg{q}$</th>
+<th style="text-align:center">$\neg{q} \rightarrow \neg{p}$</th>
+<th style="text-align:center">$p \leftrightarrow q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">F</td>
+</tr>
+<tr>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">T</td>
+</tr>
+</tbody>
+</table>
+<p>Comments:<br>
+- The conditional statement $p \rightarrow q$ and it&rsquo;s contrapositive $\neg{q} \rightarrow \neg{p}$ is <strong>equivalent</strong> because they always have the same truth values<br>
+- The converse $q \rightarrow p$ and inverse $\neg{p} \rightarrow \neg{q}$ of a conditional statement $p \rightarrow q$ is also <strong>equivalent</strong></p>
+</li>
+</ul>
+<hr>
+<h2 id="2-applications-of-propositional-logic">2. Applications of propositional logic</h2>
+<hr>
+<h2 id="3-propositional-equivalences">3. Propositional equivalences</h2>
+<h3 id="tautology-and-contradiction">Tautology and Contradiction</h3>
+<ul>
+<li><strong>Tautology</strong> is a compound proposition that is always <strong>true</strong>, no matter what the truth values of the propositional variables that occur in it<br>
+E.g: $p \land \neg{p}$</li>
+<li><strong>Contradiction</strong> is a compound proposition that is always <strong>false</strong>, no matter what the truth values of the propositional variables that occur in it<br>
+E.g: $p \lor \neg{p}$</li>
+<li><strong>Contingency</strong> is a compound proposition that is neither a tautology or a contradiction</li>
+</ul>
+<h3 id="logical-equivalences">Logical Equivalences</h3>
+<ul>
+<li><strong>De Morgan&rsquo;s Laws</strong>:
+$$ \neg{(p \land q)} \equiv \neg{p} \lor \neg{q} $$
+$$ \neg{(p \lor q)} \equiv \neg{p} \land \neg{q} $$</li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-09-05</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/math/">math</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/vectors/" class="prev" rel="prev" title="Math Test"><i class="fas fa-angle-left fa-fw"></i>Math Test</a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
