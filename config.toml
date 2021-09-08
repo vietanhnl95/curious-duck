@@ -118,7 +118,7 @@ theme = "LoveIt"
    # desktop header mode ("fixed", "normal", "auto")
    desktopMode = "fixed"
    # mobile header mode ("fixed", "normal", "auto")
-   mobileMode = "auto"
+   mobileMode = "fixed"
    # LoveIt NEW | 0.2.0 Header title config
    [params.header.title]
      # URL of the LOGO
@@ -168,7 +168,7 @@ theme = "LoveIt"
      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
      title = ""
      # subtitle shown in home page
-     subtitle = '"Curiosity is the fuel for discovery, inquiry and learning" - someone wise'
+     subtitle = 'Learn, Write and Share'
      # whether to use typeit animation for subtitle
      typeit = true
      # whether to show social links
@@ -209,7 +209,7 @@ theme = "LoveIt"
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 5
+    weight = 1
   [[menu.main]]
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
