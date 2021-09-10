@@ -3,8 +3,10 @@ baseURL = "https://curiousduck.me/"
 defaultContentLanguage = "en"
 # language code
 languageCode = "en"
+# website title
 title = "Curious Duck"
-
+# Enable emoji
+enableEmoji = true
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
@@ -37,7 +39,7 @@ theme = "LoveIt"
   # LoveIt NEW | 0.2.0 whether to hide a page from search results
   hiddenFromSearch = false
   # LoveIt NEW | 0.2.0 whether to enable twemoji
-  twemoji = false
+  twemoji = true
   # whether to enable lightgallery
   lightgallery = false
   # LoveIt NEW | 0.2.0 whether to enable the ruby extended syntax
@@ -118,7 +120,7 @@ theme = "LoveIt"
    # desktop header mode ("fixed", "normal", "auto")
    desktopMode = "fixed"
    # mobile header mode ("fixed", "normal", "auto")
-   mobileMode = "fixed"
+   mobileMode = "auto"
    # LoveIt NEW | 0.2.0 Header title config
    [params.header.title]
      # URL of the LOGO
@@ -187,7 +189,7 @@ theme = "LoveIt"
   # LoveIt NEW | 0.2.5 TypeIt config
   [params.typeit]
      # typing speed between each step (measured in milliseconds)
-     speed = 30
+     speed = 50
      # blinking speed of the cursor (measured in milliseconds)
      cursorSpeed = 1000
      # character used for the cursor (HTML format is supported)
@@ -199,9 +201,10 @@ theme = "LoveIt"
  [params.social]
    GitHub = "vietanhnl95"
    Linkedin = "viet-anh-nguyen-16116710a/"
-   Instagram = "s.i.eu"
    Facebook = "sieufernando.yiruma"
-   SoundCloud = "s-i-e-u"
+   Instagram = "s.i.eu"
+   Email = "vietanh.work@gmail.com"
+   # SoundCloud = "s-i-e-u"
 
 
 [menu]
@@ -266,6 +269,12 @@ theme = "LoveIt"
     [mediaTypes]
       [mediaTypes."text/plain"]
         suffixes = ["md"]
+
+# # Author config
+# [author]
+#   name = "xxxx"
+#   email = ""
+#   link = ""
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

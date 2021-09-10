@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>knowledge-note - Tag - Curious Duck</title>
+        <link>https://curiousduck.me/tags/knowledge-note/</link>
+        <description>knowledge-note - Tag - Curious Duck</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/tags/knowledge-note/" rel="self" type="application/rss+xml" /><item>
+    <title>Discrete Mathematics: Logic and Proofs</title>
+    <link>https://curiousduck.me/posts/logic-and-proofs/</link>
+    <pubDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://curiousduck.me/posts/logic-and-proofs/</guid>
+    <description><![CDATA[A brief summary of logic and proof]]></description>
+</item></channel>
+</rss>

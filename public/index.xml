@@ -11,12 +11,7 @@
     <pubDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://curiousduck.me/posts/logic-and-proofs/</guid>
-    <description><![CDATA[1. Propositions   A proposition is a declarative sentence (that is, a sentence that declares a fact) that is either true or false, but not both.
-Examples:
- Toronto is the capital of Canada
--&gt; This is a proposition (and it&rsquo;s false) 1 + 1 = 2
--&gt; This is a proposition (and it&rsquo;s true) What is the capital of the US?
--&gt; This is not a proposition because it is not declarative x + 1 = 2]]></description>
+    <description><![CDATA[A brief summary of logic and proof]]></description>
 </item><item>
     <title>Math Test</title>
     <link>https://curiousduck.me/posts/vectors/</link>

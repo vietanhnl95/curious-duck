@@ -3,8 +3,9 @@ title: "Discrete Mathematics: Logic and Proofs"
 date: 2021-09-05T21:41:32+07:00
 draft: false
 categories: ['Discrete Math']
-tags: [math]
-author: Curious Duck
+tags: [math, knowledge-note]
+author: false
+summary: "A brief summary of logic and proof"
 ---
 
 ## 1. Propositions

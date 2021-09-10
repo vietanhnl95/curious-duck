@@ -4,7 +4,7 @@ date: 2021-09-03T11:31:40+07:00
 draft: false
 categories: [Linear Algebra]
 tags: [math]
-author: Curious Duck
+author: false
 math: true
 ---
 ### Linear combination:
