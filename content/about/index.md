@@ -10,14 +10,23 @@ draft: false
 
 ## About me
 
-Hi, my name is Viet Anh, been working in the Data Science field for a few years for technology companies in Vietnam. I don't like to talk much about work in this blog, but if you want to know more about it, please take a look at my maybe-up-to-date <a href="https://www.linkedin.com/in/viet-anh-nguyen-16116710a/">Linkedin profile</a>
+Hi, my name is Viet Anh. I have been working in the Data Science field for a few years for some technology companies in Vietnam. This blog isn't my résumé; therefore, if you want to know more about my experiences, please take a look at my maybe-up-to-date <a href="https://www.linkedin.com/in/viet-anh-nguyen-16116710a/">Linkedin profile</a>
 <br/><br/>
-Besides the nine-to-five job, I have lots of hobbies to do in my free time, here are a few to be mentioned:
-- I love coding, making analyses on random stuffs, build small data products to solve some typical problems that I have interest in. However, many of them are still in progress, but you can still explore my <a href="https://github.com/vietanhnl95">Github</a> for more information.
+Other than that, here are some hobbies of mine to be mentioned:
+
+- Besides the nine-to-five work, in my free time, to cultivate my technical skills, I also do some coding, make analyses on random stuffs, and build small data products. However, many of them are still in progress (due to my laziness), but you can still explore my <a href="https://github.com/vietanhnl95">Github</a> for more information.  
+
 - Film photography is also one of my big passion. To know where most of my money goes, you can check out my <a href="https://www.instagram.com/s.i.eu/">Instagram</a>. A friendly advice, shooting film will make you broke, so don't try it. However, it's free to hit like on my photos. Try that one instead :sunglasses:
--
+
+- I love coffee, from drinking, brewing to wandering around different coffee shops. I hope that I can open my own coffee shop(s) someday.
+
+- Of course, I also like learning and sharing. That's why I started this blog, and I will dedicate the whole next section to elaborate this.
 
 ## About this blog
+
+You might wonder: "Why Curious Duck?"
+
+Curious is one 
 
 - By definition, curiosity can be expressed as **"A desire to know or learn"**
 - Why we need to be curious:
