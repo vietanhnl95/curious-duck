@@ -25,17 +25,18 @@ Other than that, here are some hobbies of mine to be mentioned:
 ## About this blog
 
 I am working in a field that is broad and rapidly changing. Everyday, new technologies are introduced, best practices are kept being challenged and replaced by the new ones. The only way to adapt is to apply a beginner's mindset - curious, open to new ideas, eager to learn, and not based on preconceived notions or prior knowledge.
-&nbsp;
+
 
 Learning is important, but it's even more important to learn effectively. Time is limited while there are always too many things to learn, and I believe that writing and sharing is highly helpful in acquiring new knowledge.
-&nbsp;
+
 
 In this blog, I will write about various topics, ranging from data science, maths to coffee brewing, book reviews or even literature. Technically, it can be any knowledge that I find interesting that I want to save and share. To keep everything well-organized, there will be _categories_ and _tags_ for each post.
-&nbsp;
 
-You might wonder that why I named this blog **"Curious Duck"**. Firstly, curiosity is a required quality for exploration and learning. Without being curious, we won't question; therefore, no answer is found. Secondly, a goal in learning and also a trait that I aim for, is to become as versatile as possible. Duck is also a versatile animal that can walk, swim and fly - the three basic movement methods. The other reason is Duck is also a nickname that many friends of mine call me, so it came first to my mind when giving this blog a name.
+
+You might wonder that why I named this blog **"Curious Duck"**. Firstly, curiosity is a required quality for exploration and learning. Without being curious, we won't question; therefore, no answer is found. Secondly, a goal in learning and also a trait that I aim for, is to become as versatile as possible. Duck is also a versatile animal that can walk, swim and fly - the three basic movement methods.
 <center> {{<image src="duck.jpeg" alt=" ">}} </center>
-&nbsp;
+The other reason is Duck is also a nickname that many friends of mine call me, so it came first to my mind when giving this blog a name.
+
 
 I hope that you will enjoy my blog and always remember that: **Learning is a lifelong journey**.
 
