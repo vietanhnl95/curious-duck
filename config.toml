@@ -31,6 +31,7 @@ theme = "LoveIt"
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   # images = ["/img/avatar1.png"]
+  favicon = "img/favicon.ico"
 
  # Page config
   [params.page]
@@ -216,11 +217,6 @@ theme = "LoveIt"
      id = "G-8J1TBSXMM9"
      # whether to anonymize IP
      anonymizeIP = true
-   # Fathom Analytics
-   [params.analytics.fathom]
-     id = ""
-     # server url for your tracker if you're self hosting
-     server = ""
 
 
 [menu]

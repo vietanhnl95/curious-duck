@@ -20,6 +20,6 @@ By definition, curiosity can be briefly expressed as **"A desire to know or lear
 
 <!--more-->
 
-## The Dunning-Krugger Effect
+## Overcoming the Dunning-Krugger Effect
 
 <center> {{<image src="DKE-large.png" src_s="DKE-small.png" caption="The Dunning-Krugger wiggle">}} </center>
