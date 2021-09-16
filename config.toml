@@ -169,7 +169,7 @@ theme = "LoveIt"
      # URL of avatar shown in home page
      avatarURL = "/img/avatar1.png"
      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
-     title = ""
+     title = "Curious Duck"
      # subtitle shown in home page
      subtitle = 'Learn, Write and Share'
      # whether to use typeit animation for subtitle
@@ -182,7 +182,7 @@ theme = "LoveIt"
    [params.home.posts]
      enable = true
      # special amount of posts in each home posts page
-     paginate = 2
+     paginate = 4
      # LoveIt DELETED | 0.2.0 replaced with hiddenFromHomePage in params.page
      # default behavior when you don't set "hiddenFromHomePage" in front matter
      defaultHiddenFromHomePage = false

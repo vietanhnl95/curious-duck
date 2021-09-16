@@ -6,6 +6,7 @@ categories: [Discrete Math]
 tags: [math, knowledge-note]
 author: false
 math: true
+featuredImage: "feature-image.png"
 ---
 
 Combinatorics, the study of arrangements of objects, is an important part in discrete mathematics. Enumeration, the counting of objects with certain properties, is an important part of combinatorics. Counting objects offer the solution for many different types of problems, from determine the complexity of algorithms to gambling.

@@ -5,6 +5,7 @@ draft: false
 categories: [Random]
 tags: [learning]
 author: false
+images: ["feature-image.jpeg"]
 featuredImage: "feature-image.jpeg"
 ---
 
