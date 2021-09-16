@@ -5,7 +5,7 @@ draft: false
 categories: [Random]
 tags: [learning]
 author: false
-featuredImage: "feature-image-test.jpeg"
+featuredImage: "feature-image.jpeg"
 ---
 
 <!-- Outline:
