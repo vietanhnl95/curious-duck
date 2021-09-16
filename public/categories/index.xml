@@ -3,7 +3,14 @@
         <title>Categories - Category - Curious Duck</title>
         <link>https://curiousduck.me/categories/</link>
         <description>Categories - Category - Curious Duck</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Sep 2021 14:08:25 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>Random</title>
+    <link>https://curiousduck.me/categories/random/</link>
+    <pubDate>Mon, 13 Sep 2021 14:08:25 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://curiousduck.me/categories/random/</guid>
+    <description><![CDATA[]]></description>
+</item><item>
     <title>Discrete Math</title>
     <link>https://curiousduck.me/categories/discrete-math/</link>
     <pubDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</pubDate>
