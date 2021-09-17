@@ -10,9 +10,6 @@ enableEmoji = true
 # Change the default theme to be use when building the site with Hugo
 theme = "LoveIt"
 
-# [params.assets]
-# favicon = "/img/favicon.ico"
-# favicon16x16 = "/img/favicon/favicon-16x16.png"
 [params]
   # LoveIt CHANGED | 0.2.0 LoveIt theme version
   version = "0.2.X"
@@ -31,7 +28,6 @@ theme = "LoveIt"
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
   # images = ["/img/avatar1.png"]
-  favicon = "img/favicon.ico"
 
  # Page config
   [params.page]
@@ -167,9 +163,9 @@ theme = "LoveIt"
      # Gravatar Email for preferred avatar in home page
      gravatarEmail = ""
      # URL of avatar shown in home page
-     avatarURL = "/img/avatar1.png"
+     avatarURL = "/img/round-avatar02.png"
      # LoveIt CHANGED | 0.2.7 title shown in home page (HTML format is supported)
-     title = "Curious Duck"
+     title = ""
      # subtitle shown in home page
      subtitle = 'Learn, Write and Share'
      # whether to use typeit animation for subtitle
@@ -204,7 +200,8 @@ theme = "LoveIt"
    Linkedin = "viet-anh-nguyen-16116710a/"
    Facebook = "sieufernando.yiruma"
    Instagram = "s.i.eu"
-   Email = "vietanh.work@gmail.com"
+   # Email = "vietanh.work@gmail.com"
+   GoodReads = "71081598-vi-t-anh-nguy-n-l"
    # SoundCloud = "s-i-e-u"
 
 

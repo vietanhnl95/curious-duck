@@ -10,7 +10,7 @@ draft: false
 
 ## About me
 
-Hi, my name is Viet Anh. I have been working in the Data Science field for a few years for some technology companies in Vietnam. This blog isn't my résumé; therefore, if you want to know more about my experiences, please take a look at my maybe-up-to-date <a href="https://www.linkedin.com/in/viet-anh-nguyen-16116710a/">Linkedin profile</a>
+Hi, my name is Viet Anh, a daydreamer, tech lover and data enthusiast. This blog isn't my résumé; therefore, if you want to know more about my experiences, please take a look at my maybe-up-to-date <a href="https://www.linkedin.com/in/viet-anh-nguyen-16116710a/">Linkedin profile</a>
 <br/><br/>
 
 Other than that, here are some hobbies of mine to be mentioned:
@@ -31,10 +31,16 @@ I am working in a field that is broad and rapidly changing. Everyday, new techno
 Learning is important, but it's even more important to learn effectively. Time is limited while there are always too many things to learn, and I believe that writing and sharing is highly helpful in acquiring new knowledge.
 <br/><br/>
 
-In this blog, I will write about various topics, ranging from data science, maths to coffee brewing, book reviews or even literature. Technically, it can be any knowledge that I find interesting that I want to save and share. To keep everything well-organized, there will be _categories_ and _tags_ for each post.
+In this blog, I will write about various topics, ranging from data science, maths to coffee brewing, book reviews or even literature. Technically, it can be any knowledge that I find interesting that I want to save and share. To keep everything well-organized, each post will be labeled with <a href="/categories">_categories_</a> and <a href="/tags">_tags_</a> for each post.
 <br/><br/>
 
-You might wonder that why I named this blog **"Curious Duck"**. Firstly, curiosity is a required quality for exploration and learning. Without being curious, we won't question; therefore, no answer is found. Secondly, a goal in learning and also a trait that I aim for, is to become as versatile as possible. Duck is also a versatile animal that can walk, swim and fly - the three basic movement methods.
+
+## About the name "Curious Duck"
+
+Firstly, _curiosity_ is a required quality for exploration and learning. Without being curious, we won't question; therefore, no answer is ever found.
+<br/><br/>
+
+Secondly, a goal in learning, and also a trait that I aim for, is to become as versatile as possible. It's better to see the world through a multidisciplinary view. Duck is also a versatile animal that can walk, swim and fly - the three basic movement methods.
 <center> {{<image src="duck.jpeg" alt=" ">}} </center>
 The other reason is Duck is also a nickname that many friends of mine call me, so it came first to my mind when giving this blog a name.
 <br/><br/>
