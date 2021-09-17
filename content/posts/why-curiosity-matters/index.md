@@ -23,6 +23,8 @@ By definition, curiosity can be briefly expressed as **"A desire to know or lear
 
 
 
+
+
 <center> {{<image src="DKE-large.png" src_s="DKE-small.png" caption="The Dunning-Krugger wiggle">}} </center>
 
 ## Curiosity in a rapidly changing world
