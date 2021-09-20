@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Discrete Maths - Category - Curious Duck</title>
+        <link>https://curiousduck.me/categories/discrete-maths/</link>
+        <description>Discrete Maths - Category - Curious Duck</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Sep 2021 23:44:03 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/discrete-maths/" rel="self" type="application/rss+xml" /><item>
+    <title>An Introduction to Graph Theory</title>
+    <link>https://curiousduck.me/posts/grapth-theory-basic/</link>
+    <pubDate>Sat, 18 Sep 2021 23:44:03 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://curiousduck.me/posts/grapth-theory-basic/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/feature-image.jpeg" referrerpolicy="no-referrer">
+            </div>What is Graph Theory? The Seven Bridges of Königsberg This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
+The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges.]]></description>
+</item></channel>
+</rss>

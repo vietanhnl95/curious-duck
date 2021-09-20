@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>An Introduction to Graph Theory - Curious Duck</title><meta name="Description" content="Curious Duck"><meta property="og:title" content="An Introduction to Graph Theory" />
+<meta property="og:description" content="What is Graph Theory? The Seven Bridges of Königsberg This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
+The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://curiousduck.me/posts/grapth-theory-basic/" /><meta property="og:image" content="https://curiousduck.me/posts/grapth-theory-basic/feature-image.jpeg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-18T23:44:03+07:00" />
+<meta property="article:modified_time" content="2021-09-18T23:44:03+07:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://curiousduck.me/posts/grapth-theory-basic/feature-image.jpeg"/>
+<meta name="twitter:title" content="An Introduction to Graph Theory"/>
+<meta name="twitter:description" content="What is Graph Theory? The Seven Bridges of Königsberg This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
+The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges."/>
+<meta name="application-name" content="Curious Duck">
+<meta name="apple-mobile-web-app-title" content="Curious Duck"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href=/img/favicon/favicon.ico>
+        <link rel="icon" type="image/png" sizes="32x32" href=/img/favicon/favicon-32x32.png>
+        <link rel="icon" type="image/png" sizes="16x16" href=img/favicon/favicon-16x16.png | relURL><link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png"><link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="img/favicon/site.webmanifest"><link rel="canonical" href="https://curiousduck.me/posts/grapth-theory-basic/" /><link rel="prev" href="https://curiousduck.me/posts/why-curiosity-matters/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "An Introduction to Graph Theory",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/curiousduck.me\/posts\/grapth-theory-basic\/"
+        },"genre": "posts","keywords": "graph-theory","wordcount":  977 ,
+        "url": "https:\/\/curiousduck.me\/posts\/grapth-theory-basic\/","datePublished": "2021-09-18T23:44:03+07:00","dateModified": "2021-09-18T23:44:03+07:00","publisher": {
+            "@type": "Organization",
+            "name": "Curious Duck"},"author": {
+                "@type": "Person",
+                "name": "Curious Duck"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Curious Duck">Curious Duck</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/tags/"> Tags </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Curious Duck">Curious Duck</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/tags/" title="">Tags</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">An Introduction to Graph Theory</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Curious Duck</a></span>&nbsp;<span class="post-category">included in <a href="/categories/discrete-maths/"><i class="far fa-folder fa-fw"></i>Discrete Maths</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-18">2021-09-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;977 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="feature-image.jpeg"
+        data-srcset="/posts/grapth-theory-basic/feature-image.jpeg, feature-image.jpeg 1.5x, /posts/grapth-theory-basic/feature-image.jpeg 2x"
+        data-sizes="auto"
+        alt="/posts/grapth-theory-basic/feature-image.jpeg"
+        title="/posts/grapth-theory-basic/feature-image.jpeg" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-graph-theory">What is Graph Theory?</a>
+          <ul>
+            <li><a href="#the-seven-bridges-of-königsberg">The Seven Bridges of Königsberg</a></li>
+            <li><a href="#the-four-knights-puzzle">The Four Knights Puzzle</a></li>
+            <li><a href="#graph-theory-definition-and-applications">Graph Theory Definition and Applications</a></li>
+          </ul>
+        </li>
+        <li><a href="#fundamental-concepts-of-graph-theory">Fundamental Concepts of Graph Theory</a>
+          <ul>
+            <li><a href="#graph">Graph</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="what-is-graph-theory">What is Graph Theory?</h2>
+<h3 id="the-seven-bridges-of-königsberg">The Seven Bridges of Königsberg</h3>
+<p>This history of graph theory is considered to be started from 1973 with a paper by <em>Leonhard Euler</em>. In his paper, Euler has introduced an elegant way to solve the <em>Seven Bridges of Königsberg</em> - one the most well-known problem in mathematics.</p>
+<p>The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges.</p>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/TKBP-1.jpeg" title="/posts/grapth-theory-basic/TKBP-1.jpeg" data-thumbnail="/posts/grapth-theory-basic/TKBP-1.jpeg" data-sub-html="<h2>The Seven Bridges of Königsberg</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="TKBP-1.jpeg"
+            data-srcset="/posts/grapth-theory-basic/TKBP-1.jpeg, TKBP-1.jpeg 1.5x, /posts/grapth-theory-basic/TKBP-1.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/TKBP-1.jpeg" />
+    </a><figcaption class="image-caption">The Seven Bridges of Königsberg</figcaption>
+    </figure> </center>
+<p>The question is simple: <strong>Can you draw a path to walk through the city (i.e cross all the seven bridges) without crossing each bridge more than once?</strong></p>
+<p>If you haven&rsquo;t known this problem or its solution, I suggest you not to look at the below answer right away. Instead, let spend five minutes to try to solve it on your own first, then look at the answer. I will put a picture of a duck here as a break.</p>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/duck.png" title="/posts/grapth-theory-basic/duck.png" data-thumbnail="/posts/grapth-theory-basic/duck.png" data-sub-html="<h2>Confusing duck</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="duck.png"
+            data-srcset="/posts/grapth-theory-basic/duck.png, duck.png 1.5x, /posts/grapth-theory-basic/duck.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/duck.png" />
+    </a><figcaption class="image-caption">Confusing duck</figcaption>
+    </figure> </center>
+<p>Now, let&rsquo;s see how Euler used <em>graph theory</em> to solve the problem.</p>
+<center> <a class="lightgallery" href="/posts/grapth-theory-basic/TKBP-1.jpeg" title="/posts/grapth-theory-basic/TKBP-1.jpeg" data-thumbnail="/posts/grapth-theory-basic/TKBP-1.jpeg">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="TKBP-1.jpeg"
+            data-srcset="/posts/grapth-theory-basic/TKBP-1.jpeg, TKBP-1.jpeg 1.5x, /posts/grapth-theory-basic/TKBP-1.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/TKBP-1.jpeg" />
+    </a> </center>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/TKBP-2.png" title="/posts/grapth-theory-basic/TKBP-2.png" data-thumbnail="/posts/grapth-theory-basic/TKBP-2.png" data-sub-html="<h2>Graph representation of the problem</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="TKBP-2.png"
+            data-srcset="/posts/grapth-theory-basic/TKBP-2.png, TKBP-2.png 1.5x, /posts/grapth-theory-basic/TKBP-2.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/TKBP-2.png" />
+    </a><figcaption class="image-caption">Graph representation of the problem</figcaption>
+    </figure> </center>
+<p>Euler reformulated the problem into <em>vertices</em> and <em>edges</em>:</p>
+<ul>
+<li>Each <em>vertex</em> (point) represents a piece of land</li>
+<li>Each <em>edge</em> (line) represents a bridge.</li>
+</ul>
+<p>So we will have a graph representation of the original problem in figure b with 4 vertices, connected to each other by a total of 7 edges.</p>
+<p>To be able to cross all the briges without crossing each more than once, the number of edges connected to a vertex need to be an <em>even</em> number (except for the ones chosen for start and finish), because once we enter a piece of land, we need another bridge to walk away from it. In this problem, we can see that all 4 vertices are touched by an an <em>odd</em> number of edges (3 or 5). Since we can only have one starting point and one finishing point, there can be only 2 vertices that have an <em>odd</em> number of adjacent edges. This leads to a contradiction; hence, it is impossible to solve the problem.</p>
+<h3 id="the-four-knights-puzzle">The Four Knights Puzzle</h3>
+<p>I will give one more demonstration of using graph theory to solve another interesting problem, called the <em>Four knights puzzle</em></p>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/4knights.jpeg" title="/posts/grapth-theory-basic/4knights.jpeg" data-thumbnail="/posts/grapth-theory-basic/4knights.jpeg" data-sub-html="<h2>The Four Knights Puzzle (source: https://www.geeksforgeeks.org)</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="4knights.jpeg"
+            data-srcset="/posts/grapth-theory-basic/4knights.jpeg, 4knights.jpeg 1.5x, /posts/grapth-theory-basic/4knights.jpeg 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/4knights.jpeg" />
+    </a><figcaption class="image-caption">The Four Knights Puzzle (source: <a href="https://www.geeksforgeeks.org" target="_blank" rel="noopener noreffer">https://www.geeksforgeeks.org</a>)</figcaption>
+    </figure> </center>
+<p>The puzzle is again, simple: <strong>Given a 3x3 chess table with 4 knights, 2 blacks and 2 whites, standing at four corners of the table as shown in the left figure. How many steps does it take to have a result in the right figure</strong></p>
+<p>If you are interested in solving this, I will not spoil the answer immediately. Instead, you will have another 5 minutes to try solving it on your own. Here come the duck again</p>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/duck.png" title="/posts/grapth-theory-basic/duck.png" data-thumbnail="/posts/grapth-theory-basic/duck.png" data-sub-html="<h2>Confusing duck, again</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="duck.png"
+            data-srcset="/posts/grapth-theory-basic/duck.png, duck.png 1.5x, /posts/grapth-theory-basic/duck.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/duck.png" />
+    </a><figcaption class="image-caption">Confusing duck, again</figcaption>
+    </figure> </center>
+<p>As we have seen in the first problem, to model the problem using graph theory, we will transform it into vertices and edges:</p>
+<ul>
+<li>Each vertex represents a square. We will label them from 1 to 9 as in the following matrix:</li>
+</ul>
+<center>$\begin{bmatrix} 1B & 2 & 3B \\\ 4 & 5 & 6 \\\ 7W & 8 & 9W \end{bmatrix}$</center>
+<ul>
+<li>Each edge represents the possibility to move from one square to another. For you who don&rsquo;t know how to play chess, a knight has an <em>L-shaped</em> move. For example, the knight at square 1 can move to either square 6 or 8.</li>
+</ul>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/4knights-graph.png" title="/posts/grapth-theory-basic/4knights-graph.png" data-thumbnail="/posts/grapth-theory-basic/4knights-graph.png" data-sub-html="<h2>Graph representation of the Puzzle (source: https://www.geeksforgeeks.org)</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="4knights-graph.png"
+            data-srcset="/posts/grapth-theory-basic/4knights-graph.png, 4knights-graph.png 1.5x, /posts/grapth-theory-basic/4knights-graph.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/4knights-graph.png" />
+    </a><figcaption class="image-caption">Graph representation of the Puzzle (source: <a href="https://www.geeksforgeeks.org" target="_blank" rel="noopener noreffer">https://www.geeksforgeeks.org</a>)</figcaption>
+    </figure> </center>
+<p>The above graph illustrates the initial and desired state of the game. As we can see, to solve this problem, we need to be able to reorder the knights from Black-Black-White-White to Black-White-Black-White. This is impossible because the order will always remain the same no matter what moves we make except when a knight can leap over another.</p>
+<h3 id="graph-theory-definition-and-applications">Graph Theory Definition and Applications</h3>
+<p>Graphs are discrete structures consisting of vertices and edges that connect these vertices. Problems in almost every conceivable discipline can be solved using graph model. In the above puzzles, you can make many trials trying to solve the games. After a while, you might feel that the problem is unsolvable, but you don&rsquo;t have a solid method to actually prove it. That&rsquo;s when Graph Theory comes into play.</p>
+<p>Graphs can be used to model many types of relations and processes in a variety of areas, from physics, biology to information systems, and has a wide range of applications such as:</p>
+<ul>
+<li><a href="https://www.researchgate.net/publication/225582780_Food_webs_competition_graphs_and_the_boxicity_of_ecological_phase_space">Representing the competition of different species in an ecological niche</a></li>
+<li><a href="https://www.pnas.org/content/101/9/2658">Finding communities in networks, such as social media</a></li>
+<li><a href="https://www.researchgate.net/publication/220208413_Graph_theory_application_and_web_page_ranking_for_website_link_structure_improvement">Web page ranking</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Shortest_path_problem#:~:text=In%20graph%20theory%2C%20the%20shortest,its%20constituent%20edges%20is%20minimized">Finding the shortest path between two points in a transportation network (Route Optimization)</a></li>
+<li>etc</li>
+</ul>
+<h2 id="fundamental-concepts-of-graph-theory">Fundamental Concepts of Graph Theory</h2>
+<p>Now let&rsquo;s go through some basic concepts in Graph Theory</p>
+<h3 id="graph">Graph</h3>
+<blockquote>
+<p>A graph G = (V, E) consists of V, a nonempty set of vertices (or nodes) and E, a set of edges. Each edge has either one or two vertices associated with it, called its endpoints. An edge is said to connect its endpoints.</p>
+</blockquote>
+<ul>
+<li>A graph in which each edge connects two different vertices and where no two edges connect the same pair of vertices is called a <strong>simple graph</strong></li>
+</ul>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph2.png" title="/posts/grapth-theory-basic/graph2.png" data-thumbnail="/posts/grapth-theory-basic/graph2.png" data-sub-html="<h2>A computer network between cities</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="graph2.png"
+            data-srcset="/posts/grapth-theory-basic/graph2.png, graph2.png 1.5x, /posts/grapth-theory-basic/graph2.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/graph2.png" />
+    </a><figcaption class="image-caption">A computer network between cities</figcaption>
+    </figure> </center>
+<ul>
+<li>Graphs that may have multiple edges connecting the same vertices are called <strong>multigraphs</strong></li>
+</ul>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph3.png" title="/posts/grapth-theory-basic/graph3.png" data-thumbnail="/posts/grapth-theory-basic/graph3.png" data-sub-html="<h2>A computer network with multiple links between cities</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="graph3.png"
+            data-srcset="/posts/grapth-theory-basic/graph3.png, graph3.png 1.5x, /posts/grapth-theory-basic/graph3.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/graph3.png" />
+    </a><figcaption class="image-caption">A computer network with multiple links between cities</figcaption>
+    </figure> </center>
+<blockquote>
+<p>A directed graph (or digraph) (V, E) consists of a nonempty set of vertices V and a set of directed edges (or arcs) E. Each directed edge is associated with an ordered pair of vertices. The directed edge associated with the ordered pair (u, v) is said to start at u and end at v.</p>
+</blockquote>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-09-18</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/graph-theory/">graph-theory</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/why-curiosity-matters/" class="prev" rel="prev" title="Why Curiosity Matters?"><i class="fas fa-angle-left fa-fw"></i>Why Curiosity Matters?</a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/twemoji/twemoji.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"twemoji":true};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-8J1TBSXMM9', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-8J1TBSXMM9" async></script></body>
+</html>

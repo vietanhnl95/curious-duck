@@ -10,7 +10,7 @@ draft: false
 
 ## About me
 
-Hi, my name is Viet Anh, a daydreamer, tech lover and data enthusiast. This blog isn't my résumé; therefore, if you want to know more about my experiences, please take a look at my maybe-up-to-date <a href="https://www.linkedin.com/in/viet-anh-nguyen-16116710a/">Linkedin profile</a>
+Hi, I'm Viet Anh, a day dreamer, tech lover and data science enthusiast. This blog isn't my résumé; therefore, if you want to know more about my experiences, please take a look at my maybe-up-to-date <a href="https://www.linkedin.com/in/viet-anh-nguyen-16116710a/">Linkedin profile</a>
 <br/><br/>
 
 Other than that, here are some hobbies of mine to be mentioned:
