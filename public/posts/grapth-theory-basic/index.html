@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>An Introduction to Graph Theory - Curious Duck</title><meta name="Description" content="Curious Duck"><meta property="og:title" content="An Introduction to Graph Theory" />
-<meta property="og:description" content="What is Graph Theory? The Seven Bridges of Königsberg This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
+<meta property="og:description" content="What is Graph Theory? The Seven Bridges of Königsberg Problem Description This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
 The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://curiousduck.me/posts/grapth-theory-basic/" /><meta property="og:image" content="https://curiousduck.me/posts/grapth-theory-basic/feature-image.jpeg"/><meta property="article:section" content="posts" />
@@ -16,7 +16,7 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://curiousduck.me/posts/grapth-theory-basic/feature-image.jpeg"/>
 <meta name="twitter:title" content="An Introduction to Graph Theory"/>
-<meta name="twitter:description" content="What is Graph Theory? The Seven Bridges of Königsberg This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
+<meta name="twitter:description" content="What is Graph Theory? The Seven Bridges of Königsberg Problem Description This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
 The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges."/>
 <meta name="application-name" content="Curious Duck">
 <meta name="apple-mobile-web-app-title" content="Curious Duck"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href=/img/favicon/favicon.ico>
@@ -30,7 +30,7 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/curiousduck.me\/posts\/grapth-theory-basic\/"
-        },"genre": "posts","keywords": "graph-theory","wordcount":  977 ,
+        },"genre": "posts","keywords": "graph-theory","wordcount":  1580 ,
         "url": "https:\/\/curiousduck.me\/posts\/grapth-theory-basic\/","datePublished": "2021-09-18T23:44:03+07:00","dateModified": "2021-09-18T23:44:03+07:00","publisher": {
             "@type": "Organization",
             "name": "Curious Duck"},"author": {
@@ -106,9 +106,9 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">An Introduction to Graph Theory</h1><div class="post-meta">
-            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Curious Duck</a></span>&nbsp;<span class="post-category">included in <a href="/categories/discrete-maths/"><i class="far fa-folder fa-fw"></i>Discrete Maths</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-18">2021-09-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;977 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;</div>
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Curious Duck</a></span>&nbsp;<span class="post-category">included in <a href="/categories/discrete-math/"><i class="far fa-folder fa-fw"></i>Discrete Math</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-09-18">2021-09-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1580 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;8 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -127,22 +127,37 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
       <ul>
         <li><a href="#what-is-graph-theory">What is Graph Theory?</a>
           <ul>
-            <li><a href="#the-seven-bridges-of-königsberg">The Seven Bridges of Königsberg</a></li>
-            <li><a href="#the-four-knights-puzzle">The Four Knights Puzzle</a></li>
+            <li><a href="#the-seven-bridges-of-königsberg">The Seven Bridges of Königsberg</a>
+              <ul>
+                <li><a href="#problem-description">Problem Description</a></li>
+                <li><a href="#eulers-solution">Euler&rsquo;s Solution</a></li>
+              </ul>
+            </li>
+            <li><a href="#the-four-knights-puzzle">The Four Knights Puzzle</a>
+              <ul>
+                <li><a href="#problem-description-1">Problem Description</a></li>
+                <li><a href="#solution">Solution</a></li>
+              </ul>
+            </li>
             <li><a href="#graph-theory-definition-and-applications">Graph Theory Definition and Applications</a></li>
           </ul>
         </li>
         <li><a href="#fundamental-concepts-of-graph-theory">Fundamental Concepts of Graph Theory</a>
           <ul>
             <li><a href="#graph">Graph</a></li>
+            <li><a href="#adjacency-matrix-and-incidence-matrix">Adjacency Matrix and Incidence Matrix</a></li>
+            <li><a href="#degree-of-a-vertex">Degree of a vertex</a></li>
+            <li><a href="#isomorphism-of-graphs">Isomorphism of Graphs</a></li>
           </ul>
         </li>
+        <li><a href="#more-resources">More Resources</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="what-is-graph-theory">What is Graph Theory?</h2>
 <h3 id="the-seven-bridges-of-königsberg">The Seven Bridges of Königsberg</h3>
+<h4 id="problem-description">Problem Description</h4>
 <p>This history of graph theory is considered to be started from 1973 with a paper by <em>Leonhard Euler</em>. In his paper, Euler has introduced an elegant way to solve the <em>Seven Bridges of Königsberg</em> - one the most well-known problem in mathematics.</p>
 <p>The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges.</p>
 <center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/TKBP-1.jpeg" title="/posts/grapth-theory-basic/TKBP-1.jpeg" data-thumbnail="/posts/grapth-theory-basic/TKBP-1.jpeg" data-sub-html="<h2>The Seven Bridges of Königsberg</h2>">
@@ -167,6 +182,7 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
             alt="/posts/grapth-theory-basic/duck.png" />
     </a><figcaption class="image-caption">Confusing duck</figcaption>
     </figure> </center>
+<h4 id="eulers-solution">Euler&rsquo;s Solution</h4>
 <p>Now, let&rsquo;s see how Euler used <em>graph theory</em> to solve the problem.</p>
 <center> <a class="lightgallery" href="/posts/grapth-theory-basic/TKBP-1.jpeg" title="/posts/grapth-theory-basic/TKBP-1.jpeg" data-thumbnail="/posts/grapth-theory-basic/TKBP-1.jpeg">
         <img
@@ -195,6 +211,7 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
 <p>So we will have a graph representation of the original problem in figure b with 4 vertices, connected to each other by a total of 7 edges.</p>
 <p>To be able to cross all the briges without crossing each more than once, the number of edges connected to a vertex need to be an <em>even</em> number (except for the ones chosen for start and finish), because once we enter a piece of land, we need another bridge to walk away from it. In this problem, we can see that all 4 vertices are touched by an an <em>odd</em> number of edges (3 or 5). Since we can only have one starting point and one finishing point, there can be only 2 vertices that have an <em>odd</em> number of adjacent edges. This leads to a contradiction; hence, it is impossible to solve the problem.</p>
 <h3 id="the-four-knights-puzzle">The Four Knights Puzzle</h3>
+<h4 id="problem-description-1">Problem Description</h4>
 <p>I will give one more demonstration of using graph theory to solve another interesting problem, called the <em>Four knights puzzle</em></p>
 <center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/4knights.jpeg" title="/posts/grapth-theory-basic/4knights.jpeg" data-thumbnail="/posts/grapth-theory-basic/4knights.jpeg" data-sub-html="<h2>The Four Knights Puzzle (source: https://www.geeksforgeeks.org)</h2>">
         <img
@@ -218,6 +235,7 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
             alt="/posts/grapth-theory-basic/duck.png" />
     </a><figcaption class="image-caption">Confusing duck, again</figcaption>
     </figure> </center>
+<h4 id="solution">Solution</h4>
 <p>As we have seen in the first problem, to model the problem using graph theory, we will transform it into vertices and edges:</p>
 <ul>
 <li>Each vertex represents a square. We will label them from 1 to 9 as in the following matrix:</li>
@@ -238,7 +256,7 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
     </figure> </center>
 <p>The above graph illustrates the initial and desired state of the game. As we can see, to solve this problem, we need to be able to reorder the knights from Black-Black-White-White to Black-White-Black-White. This is impossible because the order will always remain the same no matter what moves we make except when a knight can leap over another.</p>
 <h3 id="graph-theory-definition-and-applications">Graph Theory Definition and Applications</h3>
-<p>Graphs are discrete structures consisting of vertices and edges that connect these vertices. Problems in almost every conceivable discipline can be solved using graph model. In the above puzzles, you can make many trials trying to solve the games. After a while, you might feel that the problem is unsolvable, but you don&rsquo;t have a solid method to actually prove it. That&rsquo;s when Graph Theory comes into play.</p>
+<p>So far, you might have a sense of what graphs are. By definition, <strong>Graphs are discrete structures consisting of vertices and edges that connect these vertices.</strong> Problems in almost every conceivable discipline can be solved using graph model. In the above puzzles, you can make many trials trying to solve the games. After a while, you might feel that the problem is unsolvable, but you don&rsquo;t have a solid method to actually prove it. That&rsquo;s when Graph Theory comes into play.</p>
 <p>Graphs can be used to model many types of relations and processes in a variety of areas, from physics, biology to information systems, and has a wide range of applications such as:</p>
 <ul>
 <li><a href="https://www.researchgate.net/publication/225582780_Food_webs_competition_graphs_and_the_boxicity_of_ecological_phase_space">Representing the competition of different species in an ecological niche</a></li>
@@ -251,12 +269,13 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
 <p>Now let&rsquo;s go through some basic concepts in Graph Theory</p>
 <h3 id="graph">Graph</h3>
 <blockquote>
-<p>A graph G = (V, E) consists of V, a nonempty set of vertices (or nodes) and E, a set of edges. Each edge has either one or two vertices associated with it, called its endpoints. An edge is said to connect its endpoints.</p>
+<p>A graph $G = (V, E)$ consists of $V$, a nonempty set of vertices (or nodes) and $E$, a set of edges. Each edge has either one or two vertices associated with it, called its endpoints. An edge is said to connect its endpoints.</p>
 </blockquote>
+<p>Graphs can be classified into:</p>
 <ul>
-<li>A graph in which each edge connects two different vertices and where no two edges connect the same pair of vertices is called a <strong>simple graph</strong></li>
+<li><strong>Simple graphs</strong> or <strong>multigraphs</strong> depending on the number of edges between two vertices</li>
 </ul>
-<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph2.png" title="/posts/grapth-theory-basic/graph2.png" data-thumbnail="/posts/grapth-theory-basic/graph2.png" data-sub-html="<h2>A computer network between cities</h2>">
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph2.png" title="/posts/grapth-theory-basic/graph2.png" data-thumbnail="/posts/grapth-theory-basic/graph2.png" data-sub-html="<h2>Simple graph - no more than one edge connected the same pairs of vertices</h2>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
@@ -264,12 +283,9 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
             data-srcset="/posts/grapth-theory-basic/graph2.png, graph2.png 1.5x, /posts/grapth-theory-basic/graph2.png 2x"
             data-sizes="auto"
             alt="/posts/grapth-theory-basic/graph2.png" />
-    </a><figcaption class="image-caption">A computer network between cities</figcaption>
+    </a><figcaption class="image-caption"><strong>Simple graph</strong> - no more than one edge connected the same pairs of vertices</figcaption>
     </figure> </center>
-<ul>
-<li>Graphs that may have multiple edges connecting the same vertices are called <strong>multigraphs</strong></li>
-</ul>
-<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph3.png" title="/posts/grapth-theory-basic/graph3.png" data-thumbnail="/posts/grapth-theory-basic/graph3.png" data-sub-html="<h2>A computer network with multiple links between cities</h2>">
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph3.png" title="/posts/grapth-theory-basic/graph3.png" data-thumbnail="/posts/grapth-theory-basic/graph3.png" data-sub-html="<h2>Multigraph - may have multiple edges connecting the same vertices</h2>">
         <img
             class="lazyload"
             src="/svg/loading.min.svg"
@@ -277,11 +293,112 @@ The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Ru
             data-srcset="/posts/grapth-theory-basic/graph3.png, graph3.png 1.5x, /posts/grapth-theory-basic/graph3.png 2x"
             data-sizes="auto"
             alt="/posts/grapth-theory-basic/graph3.png" />
-    </a><figcaption class="image-caption">A computer network with multiple links between cities</figcaption>
+    </a><figcaption class="image-caption"><strong>Multigraph</strong> - may have multiple edges connecting the same vertices</figcaption>
     </figure> </center>
+<ul>
+<li><strong>Undirected graphs</strong> or <strong>directed graphs (or digraphs)</strong> depending on the direction of the edges</li>
+</ul>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph3.png" title="/posts/grapth-theory-basic/graph3.png" data-thumbnail="/posts/grapth-theory-basic/graph3.png" data-sub-html="<h2>Undirected graph - edges have no direction</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="graph3.png"
+            data-srcset="/posts/grapth-theory-basic/graph3.png, graph3.png 1.5x, /posts/grapth-theory-basic/graph3.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/graph3.png" />
+    </a><figcaption class="image-caption"><strong>Undirected graph</strong> - edges have no direction</figcaption>
+    </figure> </center>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph4.png" title="/posts/grapth-theory-basic/graph4.png" data-thumbnail="/posts/grapth-theory-basic/graph4.png" data-sub-html="<h2>Directed graph - edges have directions</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="graph4.png"
+            data-srcset="/posts/grapth-theory-basic/graph4.png, graph4.png 1.5x, /posts/grapth-theory-basic/graph4.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/graph4.png" />
+    </a><figcaption class="image-caption"><strong>Directed graph</strong> - edges have directions</figcaption>
+    </figure> </center>
+<h3 id="adjacency-matrix-and-incidence-matrix">Adjacency Matrix and Incidence Matrix</h3>
 <blockquote>
-<p>A directed graph (or digraph) (V, E) consists of a nonempty set of vertices V and a set of directed edges (or arcs) E. Each directed edge is associated with an ordered pair of vertices. The directed edge associated with the ordered pair (u, v) is said to start at u and end at v.</p>
+<p>Two vertices $u$ and $v$ in an undirected graph G are called <em>adjacent</em> (or neighbors) in $G$ if $u$ and $v$ are endpoints of an edge $e$ of $G$.
+Such an edge $e$ is called <em>incident</em> with the vertices $u$ and $v$ and $e$ is said to connect $u$ and $v$.</p>
 </blockquote>
+<p>Let consider the following multiple undirected pseudograph</p>
+<center> <figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph5.png" title="/posts/grapth-theory-basic/graph5.png" data-thumbnail="/posts/grapth-theory-basic/graph5.png" data-sub-html="<h2>A pseudograph</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="graph5.png"
+            data-srcset="/posts/grapth-theory-basic/graph5.png, graph5.png 1.5x, /posts/grapth-theory-basic/graph5.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/graph5.png" />
+    </a><figcaption class="image-caption">A pseudograph</figcaption>
+    </figure> </center>
+<ul>
+<li>
+<p>We can represents this graph by an <em>incidence matrix</em>, with 5 rows represents 5 vertices: $v_1,v_2, .., v_5$, and 8 columns represents 8 edges $e_1, e_2, .., e_8$. The value is 1 if the edge is incident with the vertex, and 0 otherwise
+$$\begin{bmatrix} 1&amp;1&amp;1&amp;0&amp;0&amp;0&amp;0&amp;0 \\ 0&amp;1&amp;1&amp;1&amp;0&amp;1&amp;1&amp;0 \\ 0&amp;0&amp;0&amp;1&amp;1&amp;0&amp;0&amp;0 \\ 0&amp;0&amp;0&amp;0&amp;0&amp;0&amp;1&amp;1 \\ 0&amp;0&amp;0&amp;0&amp;1&amp;1&amp;0&amp;0 \end{bmatrix}$$</p>
+</li>
+<li>
+<p>Or we can also represents the graph by an <em>adjacency matrix</em>, with rows and columns represent 5 vertices $v_1, v_2, &hellip;, v_5$ in the same order. Each value is the number of edges that connects two corresponding vertices
+$$\begin{bmatrix} 1&amp;2&amp;0&amp;0&amp;0 \\ 2&amp;0&amp;1&amp;1&amp;1 \\ 0&amp;1&amp;0&amp;0&amp;1 \\ 0&amp;1&amp;0&amp;1&amp;0 \\ 0&amp;1&amp;1&amp;0&amp;1 \end{bmatrix}$$</p>
+</li>
+</ul>
+<h3 id="degree-of-a-vertex">Degree of a vertex</h3>
+<ul>
+<li>Degree in undirected graphs:</li>
+</ul>
+<blockquote>
+<p>The degree of a vertex in an undirected graph is the number of edges incident with it, except that a loop at a vertex contributes twice to the degree of that vertex.
+The degree of the vertex $v$ is denoted by $deg(v)$.</p>
+</blockquote>
+<ul>
+<li>Degree in directed graphs:</li>
+</ul>
+<blockquote>
+<p>In a directed graph:</p>
+<ul>
+<li>The in-degree of a vertex $v$, denoted by $deg^{-}(v)$, is the number of edges with $v$ as their terminal vertex, i.e $v$ is the end of these edges</li>
+<li>The out-degree of $v$, denoted by $deg^{+}(v)$, is the number of edges with $v$ as their initial vertex, i.e $v$ is the start of these edges
+(Note that a loop at a vertex contributes 1 to both the in-degree and the out-degree of this vertex.)</li>
+</ul>
+</blockquote>
+<ul>
+<li>Total degree:</li>
+</ul>
+<blockquote>
+<p>Let G = (V, E) be a graph with m edges. Then $$2m = \sum_{v \in  V} deg(v)$$
+We can see that the total degree in a graph is always an even number</p>
+</blockquote>
+<h3 id="isomorphism-of-graphs">Isomorphism of Graphs</h3>
+<blockquote>
+<p>The simple graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$ are <em>isomorphic</em> if there exists a one-to-one
+and onto function $f$ from $V_1$ to $V_2$ with the property that $a$ and $b$ are adjacent in $G_1$ if
+and only if $f(a)$ and $f(b)$ are adjacent in $G_2$, for all $a$ and $b$ in $V_1$. Such a function $f$ is called an isomorphism.
+Two simple graphs that are not isomorphic are called <em>nonisomorphic</em>.</p>
+<p>In other words, when two simple graphs are isomorphic,
+there is a one-to-one correspondence between vertices of the two graphs that preserves the adjacency relationship.</p>
+</blockquote>
+<figure><a class="lightgallery" href="/posts/grapth-theory-basic/graph6.png" title="/posts/grapth-theory-basic/graph6.png" data-thumbnail="/posts/grapth-theory-basic/graph6.png" data-sub-html="<h2>Two isomorphic graphs</h2>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="graph6.png"
+            data-srcset="/posts/grapth-theory-basic/graph6.png, graph6.png 1.5x, /posts/grapth-theory-basic/graph6.png 2x"
+            data-sizes="auto"
+            alt="/posts/grapth-theory-basic/graph6.png" />
+    </a><figcaption class="image-caption">Two isomorphic graphs</figcaption>
+    </figure>
+<p>In the above example, we have 2 graphs: $G = (V, E)$ and $H = (W, F)$. If we map $G$ to $H$ by function $f$ with
+$f(u_1) = v_1, f(u_2) = v_4, f(u_3) = v_3, f(u_4) = v_2$, the adjacency is preserved. Therefore, two graphs $G$ and $H$ are isomorphic</p>
+<h2 id="more-resources">More Resources</h2>
+<p>In this article, I have covered some fundamental concepts in Graph Theory, and demonstrated a few examples of using Graph Theory to solve real problems.
+To have a deeper understanding, learn more concepts and applications of Graph Theory, there are some good resources for you:</p>
+<ul>
+<li><em>Discrete mathematics and its applications, Kenneth H. Rosen</em> (Most of the content in this article is referred from this book)</li>
+<li><em>Graph Theory, by Bondy and Murty</em> (Book in <em>Graduate Texts in Mathematics</em> - a series of graduate-level textbooks in mathematics published by Springer-Verlag)</li>
+<li><em>Digraphs - Theory, Algorithms and Applications, by Gregory Gutin and Jørgen Bang-Jensen</em></li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

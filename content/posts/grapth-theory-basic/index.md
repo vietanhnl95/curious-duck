@@ -2,7 +2,7 @@
 title: "An Introduction to Graph Theory"
 date: 2021-09-18T23:44:03+07:00
 draft: false
-categories: [Discrete Maths]
+categories: [Discrete Math]
 tags: [graph-theory]
 author: Curious Duck
 featuredImage: "feature-image.jpeg"
@@ -13,6 +13,8 @@ math: true
 ## What is Graph Theory?
 
 ### The Seven Bridges of Königsberg
+
+#### Problem Description
 
 This history of graph theory is considered to be started from 1973 with a paper by _Leonhard Euler_. In his paper, Euler has introduced an elegant way to solve the _Seven Bridges of Königsberg_ - one the most well-known problem in mathematics.
 
@@ -25,6 +27,8 @@ The question is simple: **Can you draw a path to walk through the city (i.e cros
 If you haven't known this problem or its solution, I suggest you not to look at the below answer right away. Instead, let spend five minutes to try to solve it on your own first, then look at the answer. I will put a picture of a duck here as a break.
 
 <center> {{<image src="duck.png" caption="Confusing duck">}} </center>
+
+#### Euler's Solution
 
 Now, let's see how Euler used _graph theory_ to solve the problem.
 
@@ -42,6 +46,8 @@ To be able to cross all the briges without crossing each more than once, the num
 
 ### The Four Knights Puzzle
 
+#### Problem Description
+
 I will give one more demonstration of using graph theory to solve another interesting problem, called the _Four knights puzzle_
 
 <center> {{<image src="4knights.jpeg" caption="The Four Knights Puzzle (source: https://www.geeksforgeeks.org)">}} </center>
@@ -51,6 +57,8 @@ The puzzle is again, simple: **Given a 3x3 chess table with 4 knights, 2 blacks 
 If you are interested in solving this, I will not spoil the answer immediately. Instead, you will have another 5 minutes to try solving it on your own. Here come the duck again
 
 <center> {{<image src="duck.png" caption="Confusing duck, again">}} </center>
+
+#### Solution
 
 As we have seen in the first problem, to model the problem using graph theory, we will transform it into vertices and edges:
 - Each vertex represents a square. We will label them from 1 to 9 as in the following matrix:
@@ -65,7 +73,7 @@ The above graph illustrates the initial and desired state of the game. As we can
 
 ### Graph Theory Definition and Applications
 
-Graphs are discrete structures consisting of vertices and edges that connect these vertices. Problems in almost every conceivable discipline can be solved using graph model. In the above puzzles, you can make many trials trying to solve the games. After a while, you might feel that the problem is unsolvable, but you don't have a solid method to actually prove it. That's when Graph Theory comes into play.
+So far, you might have a sense of what graphs are. By definition, **Graphs are discrete structures consisting of vertices and edges that connect these vertices.** Problems in almost every conceivable discipline can be solved using graph model. In the above puzzles, you can make many trials trying to solve the games. After a while, you might feel that the problem is unsolvable, but you don't have a solid method to actually prove it. That's when Graph Theory comes into play.
 
 Graphs can be used to model many types of relations and processes in a variety of areas, from physics, biology to information systems, and has a wide range of applications such as:
 - <a href="https://www.researchgate.net/publication/225582780_Food_webs_competition_graphs_and_the_boxicity_of_ecological_phase_space">Representing the competition of different species in an ecological niche</a>
@@ -80,12 +88,75 @@ Now let's go through some basic concepts in Graph Theory
 
 ### Graph
 
-> A graph G = (V, E) consists of V, a nonempty set of vertices (or nodes) and E, a set of edges. Each edge has either one or two vertices associated with it, called its endpoints. An edge is said to connect its endpoints.
+> A graph $G = (V, E)$ consists of $V$, a nonempty set of vertices (or nodes) and $E$, a set of edges. Each edge has either one or two vertices associated with it, called its endpoints. An edge is said to connect its endpoints.
 
-- A graph in which each edge connects two different vertices and where no two edges connect the same pair of vertices is called a **simple graph**
-<center> {{<image src="graph2.png" caption="A computer network between cities">}} </center>
+Graphs can be classified into:
+- **Simple graphs** or **multigraphs** depending on the number of edges between two vertices
 
-- Graphs that may have multiple edges connecting the same vertices are called **multigraphs**
-<center> {{<image src="graph3.png" caption="A computer network with multiple links between cities">}} </center>
+<center> {{<image src="graph2.png" caption="**Simple graph** - no more than one edge connected the same pairs of vertices">}} </center>
+<center> {{<image src="graph3.png" caption="**Multigraph** - may have multiple edges connecting the same vertices">}} </center>
 
-> A directed graph (or digraph) (V, E) consists of a nonempty set of vertices V and a set of directed edges (or arcs) E. Each directed edge is associated with an ordered pair of vertices. The directed edge associated with the ordered pair (u, v) is said to start at u and end at v.
+- **Undirected graphs** or **directed graphs (or digraphs)** depending on the direction of the edges
+<center> {{<image src="graph3.png" caption="**Undirected graph** - edges have no direction">}} </center>
+<center> {{<image src="graph4.png" caption="**Directed graph** - edges have directions">}} </center>
+
+
+### Adjacency Matrix and Incidence Matrix
+
+> Two vertices $u$ and $v$ in an undirected graph G are called *adjacent* (or neighbors) in $G$ if $u$ and $v$ are endpoints of an edge $e$ of $G$.
+Such an edge $e$ is called *incident* with the vertices $u$ and $v$ and $e$ is said to connect $u$ and $v$.
+
+Let consider the following multiple undirected pseudograph
+<center> {{<image src="graph5.png" caption="A pseudograph">}} </center>
+
+- We can represents this graph by an _incidence matrix_, with 5 rows represents 5 vertices: $v_1,v_2, .., v_5$, and 8 columns represents 8 edges $e_1, e_2, .., e_8$. The value is 1 if the edge is incident with the vertex, and 0 otherwise
+$$\begin{bmatrix} 1&1&1&0&0&0&0&0 \\\ 0&1&1&1&0&1&1&0 \\\ 0&0&0&1&1&0&0&0 \\\ 0&0&0&0&0&0&1&1 \\\ 0&0&0&0&1&1&0&0 \end{bmatrix}$$
+
+- Or we can also represents the graph by an _adjacency matrix_, with rows and columns represent 5 vertices $v_1, v_2, ..., v_5$ in the same order. Each value is the number of edges that connects two corresponding vertices
+$$\begin{bmatrix} 1&2&0&0&0 \\\ 2&0&1&1&1 \\\ 0&1&0&0&1 \\\ 0&1&0&1&0 \\\ 0&1&1&0&1 \end{bmatrix}$$
+
+
+### Degree of a vertex
+
+- Degree in undirected graphs:
+
+> The degree of a vertex in an undirected graph is the number of edges incident with it, except that a loop at a vertex contributes twice to the degree of that vertex.
+The degree of the vertex $v$ is denoted by $deg(v)$.
+
+
+- Degree in directed graphs:
+
+> In a directed graph:
+> - The in-degree of a vertex $v$, denoted by $deg^{-}(v)$, is the number of edges with $v$ as their terminal vertex, i.e $v$ is the end of these edges
+> - The out-degree of $v$, denoted by $deg^{+}(v)$, is the number of edges with $v$ as their initial vertex, i.e $v$ is the start of these edges
+(Note that a loop at a vertex contributes 1 to both the in-degree and the out-degree of this vertex.)
+
+
+- Total degree:
+> Let G = (V, E) be a graph with m edges. Then $$2m = \sum_{v \in  V} deg(v)$$
+> We can see that the total degree in a graph is always an even number
+
+
+### Isomorphism of Graphs
+
+> The simple graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$ are *isomorphic* if there exists a one-to-one
+> and onto function $f$ from $V_1$ to $V_2$ with the property that $a$ and $b$ are adjacent in $G_1$ if
+> and only if $f(a)$ and $f(b)$ are adjacent in $G_2$, for all $a$ and $b$ in $V_1$. Such a function $f$ is called an isomorphism.
+> Two simple graphs that are not isomorphic are called *nonisomorphic*.  
+>
+> In other words, when two simple graphs are isomorphic,
+> there is a one-to-one correspondence between vertices of the two graphs that preserves the adjacency relationship.
+
+{{<image src="graph6.png" caption="Two isomorphic graphs">}}
+
+In the above example, we have 2 graphs: $G = (V, E)$ and $H = (W, F)$. If we map $G$ to $H$ by function $f$ with
+$f(u_1) = v_1, f(u_2) = v_4, f(u_3) = v_3, f(u_4) = v_2$, the adjacency is preserved. Therefore, two graphs $G$ and $H$ are isomorphic
+
+
+## More Resources
+
+In this article, I have covered some fundamental concepts in Graph Theory, and demonstrated a few examples of using Graph Theory to solve real problems.
+To have a deeper understanding, learn more concepts and applications of Graph Theory, there are some good resources for you:
+- *Discrete mathematics and its applications, Kenneth H. Rosen* (Most of the content in this article is referred from this book)
+- *Graph Theory, by Bondy and Murty* (Book in *Graduate Texts in Mathematics* - a series of graduate-level textbooks in mathematics published by Springer-Verlag)
+- *Digraphs - Theory, Algorithms and Applications, by Gregory Gutin and Jørgen Bang-Jensen*

@@ -3,7 +3,17 @@
         <title>Discrete Math - Category - Curious Duck</title>
         <link>https://curiousduck.me/categories/discrete-math/</link>
         <description>Discrete Math - Category - Curious Duck</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/discrete-math/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Sep 2021 23:44:03 &#43;0700</lastBuildDate><atom:link href="https://curiousduck.me/categories/discrete-math/" rel="self" type="application/rss+xml" /><item>
+    <title>An Introduction to Graph Theory</title>
+    <link>https://curiousduck.me/posts/grapth-theory-basic/</link>
+    <pubDate>Sat, 18 Sep 2021 23:44:03 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://curiousduck.me/posts/grapth-theory-basic/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/feature-image.jpeg" referrerpolicy="no-referrer">
+            </div>What is Graph Theory? The Seven Bridges of Königsberg Problem Description This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
+The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges.]]></description>
+</item><item>
     <title>Discrete Mathematics: Logic and Proofs</title>
     <link>https://curiousduck.me/posts/logic-and-proofs/</link>
     <pubDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</pubDate>
