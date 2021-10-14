@@ -31,7 +31,7 @@ I am working in a field that is broad and rapidly changing. Everyday, new techno
 Learning is important, but it's even more important to learn effectively. Time is limited while there are always too many things to learn, and I believe that writing and sharing is highly helpful in acquiring new knowledge.
 <br/><br/>
 
-In this blog, I will write about various topics, ranging from data science, maths to coffee brewing, book reviews or even literature. Technically, it can be any knowledge that I find interesting that I want to save and share. To keep everything well-organized, each post will be labeled with <a href="/categories">_categories_</a> and <a href="/tags">_tags_</a> for each post.
+In this blog, I will write about various topics, ranging from data science, maths to coffee brewing, book reviews or even literature. Technically, it can be anything that I find interesting, and I want to and share with others. To keep everything well-organized, each post will be labeled with <a href="/categories">_categories_</a> and <a href="/tags">_tags_</a>.
 <br/><br/>
 
 
@@ -42,10 +42,10 @@ Firstly, _curiosity_ is a required quality for exploration and learning. Without
 
 Secondly, a goal in learning, and also a trait that I aim for, is to become as versatile as possible. It's better to see the world through a multidisciplinary view. Duck is also a versatile animal that can walk, swim and fly - the three basic movement methods.
 <center> {{<image src="duck.jpeg" alt=" ">}} </center>
-The other reason is Duck is also a nickname that many friends of mine call me, so it came first to my mind when giving this blog a name.
+The other reason is Duck is also a nickname that many friends of mine call me, so it came first to my mind when giving this blog a name :laughing:.
 <br/><br/>
 
-I hope that you will enjoy my blog and always remember that: **Learning is a lifelong journey**.
+**Learning is a lifelong journey**, and I hope you will enjoy this blog.
 
 <!-- Mortimer Adler, a famous American philosopher once said in his famous book _How to Read a Book: The Classic Guide to Intelligent Reading_ that “The person who says he knows what he thinks but cannot express it usually does not know what he thinks." -->
 
