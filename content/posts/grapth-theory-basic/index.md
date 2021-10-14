@@ -6,7 +6,7 @@ categories: [Discrete Math]
 tags: [graph-theory]
 author: Curious Duck
 featuredImage: "feature-image.jpeg"
-summary: ""
+summary: "Graphs can be used to model many types of relations and processes in a variety of areas, from physics, biology to information systems, and has a wide range of applications. Let's explore Graph Theory's definition and its fundamental concepts."
 math: true
 ---
 
@@ -156,7 +156,7 @@ $f(u_1) = v_1, f(u_2) = v_4, f(u_3) = v_3, f(u_4) = v_2$, the adjacency is prese
 ## More Resources
 
 In this article, I have covered some fundamental concepts in Graph Theory, and demonstrated a few examples of using Graph Theory to solve real problems.
-To have a deeper understanding, learn more concepts and applications of Graph Theory, there are some good resources for you:
+To have a deeper understanding, learn more concepts and applications of Graph Theory, stay tuned for new posts from me or you can explore yourself. Here are some good resources:
 - *Discrete mathematics and its applications, Kenneth H. Rosen* (Most of the content in this article is referred from this book)
 - *Graph Theory, by Bondy and Murty* (Book in *Graduate Texts in Mathematics* - a series of graduate-level textbooks in mathematics published by Springer-Verlag)
 - *Digraphs - Theory, Algorithms and Applications, by Gregory Gutin and Jørgen Bang-Jensen*

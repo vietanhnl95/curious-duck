@@ -1,7 +1,7 @@
 ---
 title: "Math Test"
 date: 2021-09-03T11:31:40+07:00
-draft: false
+draft: true
 categories: [Linear Algebra]
 tags: [math]
 author: false

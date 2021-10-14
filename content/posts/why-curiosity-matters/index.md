@@ -1,7 +1,7 @@
 ---
 title: "Why Curiosity Matters?"
 date: 2021-09-13T14:08:25+07:00
-draft: false
+draft: true
 categories: [Random]
 tags: [learning]
 author: Curious Duck

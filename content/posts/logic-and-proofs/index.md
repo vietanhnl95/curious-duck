@@ -1,7 +1,7 @@
 ---
 title: "Discrete Mathematics: Logic and Proofs"
 date: 2021-09-05T21:41:32+07:00
-draft: false
+draft: true
 categories: ['Discrete Math']
 tags: [math, knowledge-note]
 author: false

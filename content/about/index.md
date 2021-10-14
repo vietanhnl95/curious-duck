@@ -17,7 +17,7 @@ Other than that, here are some hobbies of mine to be mentioned:
 
 - Besides the nine-to-five work, in my free time, to cultivate my technical skills, I also do some coding, make analyses on random stuffs, and develop small data products. However, many of them are still in progress (due to my laziness), but you can still explore my <a href="https://github.com/vietanhnl95">Github</a> for more information.  
 
-- Film photography is also one of my big passion. To know where most of my money goes, you can check out my <a href="https://www.instagram.com/s.i.eu/">Instagram</a>. A friendly advice, shooting film will make you broke, so don't try it. However, it's free to hit like on my photos. Try that one instead :sunglasses:
+- Film photography is also one of my big passion. To know where most of my money goes, you can check out my <a href="https://www.flickr.com/photos/140409911@N03/">Flickr</a>. A friendly advice, shooting film will make you broke, so don't try it. However, it's free to hit like on my photos. Try that one instead :sunglasses:
 
 - I love coffee, from drinking, brewing to wandering around different coffee shops. I hope that I can open my own coffee shop(s) someday.
 

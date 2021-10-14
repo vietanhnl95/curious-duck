@@ -11,33 +11,6 @@
     <guid>https://curiousduck.me/posts/grapth-theory-basic/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/feature-image.jpeg" referrerpolicy="no-referrer">
-            </div>What is Graph Theory? The Seven Bridges of Königsberg Problem Description This history of graph theory is considered to be started from 1973 with a paper by Leonhard Euler. In his paper, Euler has introduced an elegant way to solve the Seven Bridges of Königsberg - one the most well-known problem in mathematics.
-The problem set theme in the city of Königsberg in Prussia (now Kaliningrad, Russia). The Pregel River divided the city into 2 mainlands and 2 large islands, whom are connected by seven bridges.]]></description>
-</item><item>
-    <title>Why Curiosity Matters?</title>
-    <link>https://curiousduck.me/posts/why-curiosity-matters/</link>
-    <pubDate>Mon, 13 Sep 2021 14:08:25 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://curiousduck.me/posts/why-curiosity-matters/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/feature-image.jpeg" referrerpolicy="no-referrer">
-            </div>Curiosity is a typical characteristics of successful people. Without being curious, we won&rsquo;t question, no answer is found, and we learn nothing. Let&rsquo;s discuss the utmost importance of it]]></description>
-</item><item>
-    <title>Discrete Mathematics: Logic and Proofs</title>
-    <link>https://curiousduck.me/posts/logic-and-proofs/</link>
-    <pubDate>Sun, 05 Sep 2021 21:41:32 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://curiousduck.me/posts/logic-and-proofs/</guid>
-    <description><![CDATA[A brief summary of logic and proof]]></description>
-</item><item>
-    <title>Math Test</title>
-    <link>https://curiousduck.me/posts/vectors/</link>
-    <pubDate>Fri, 03 Sep 2021 11:31:40 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://curiousduck.me/posts/vectors/</guid>
-    <description><![CDATA[Linear combination: With a set of vectors {$\vec{v_1}$, $\vec{v_2}$, &hellip;, $\vec{v_n}$} in $\mathbb{R}^n$, the linear combination of those vectors is: $$ c_{1}\vec{v_1} + c_{2}\vec{v_2} + &hellip; + c_{n}\vec{v_n} $$
-Examples
-In $\mathbb{R}^2$, we have 2 vectors: $\vec{v} = (1,2)$ and $\vec{w} = (4,-1)$: $2\begin{bmatrix} 1 \ 2 \end{bmatrix}$ + 3$\begin{bmatrix} 4 \ -1 \end{bmatrix}$ $\begin{bmatrix} a &amp; b \ c &amp; d \end{bmatrix}$
- $2(1,2) + 3(4,-1)$ is a linear combination of $\vec{v}$ and $\vec{w}$ $5(1,2) - 1(4,-1)$ is also a linear combination of $\vec{v}$ and $\vec{w}$   Vector operations With $\vec{v}=(v_1, v_2)$ and $\vec{w}=(w_1, w_2)$ in $\mathbb{R}^2$]]></description>
+            </div>Graphs can be used to model many types of relations and processes in a variety of areas, from physics, biology to information systems, and has a wide range of applications. Let&rsquo;s explore Graph Theory&rsquo;s definition and its fundamental concepts.]]></description>
 </item></channel>
 </rss>
